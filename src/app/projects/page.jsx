@@ -8,6 +8,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import projects from "./../../components/projects/data";
+import Link from "next/link";
 
 const page = () => {
   useEffect(() => {
@@ -41,8 +42,10 @@ const page = () => {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
+                    <Link href={project.link}>
+                      <Button size="small">Go to Project</Button>
+                    </Link>
+                    {/* <Button size="small">Learn More</Button> */}
                   </CardActions>
                 </Card>
               ))}

@@ -1,0 +1,15 @@
+.background{
+    background-color: mediumpurple;
+}
+
+.body{
+    background-color: pink;
+}
+.marginTop{
+    margin-top: '10px';
+}
+
+.margin{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
