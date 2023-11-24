@@ -18,6 +18,7 @@ function Navbar() {
   const aboutMeRef = useRef(null);
   const myWorkRef = useRef(null);
   const myServicesRef = useRef(null);
+  const journey = useRef(null);
 
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
@@ -73,6 +74,14 @@ function Navbar() {
             >
               My Services
             </a>
+            <a
+              href="#journey"
+              onClick={() => {
+                scrollToRef(journey), closeNavbar();
+              }}
+            >
+              My Journey
+            </a>
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
               <FaTimes />
             </button>
@@ -102,7 +111,10 @@ function Navbar() {
             {/* <h1>My Services</h1> */}
             <MyServices />
           </section>
-          <Journeybtn />
+          <section ref={journey} id="journey">
+            <Journeybtn />
+          </section>
+          {/* <Journeybtn /> */}
         </div>
       </div>
     </>

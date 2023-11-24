@@ -102,31 +102,37 @@ const About = () => {
                       <div>Tools</div>
                       <div className="flex flex-row mx-20 justify-around">
                         <img
+                          className="cursor-pointer"
                           width={20}
                           src={"/images/linkedin-in.svg"}
                           alt={"img"}
                         />
                         <img
+                          className="cursor-pointer"
                           width={20}
                           src={"/images/linkedin-in.svg"}
                           alt="img"
                         />
                         <img
+                          className="cursor-pointer"
                           width={20}
                           src={"/images/linkedin-in.svg"}
                           alt="img"
                         />
                         <img
+                          className="cursor-pointer"
                           width={20}
                           src={"/images/linkedin-in.svg"}
                           alt="img"
                         />
                         <img
+                          className="cursor-pointer"
                           width={20}
                           src={"/images/linkedin-in.svg"}
                           alt="img"
                         />
                         <img
+                          className="cursor-pointer"
                           width={20}
                           src={"/images/linkedin-in.svg"}
                           alt="img"

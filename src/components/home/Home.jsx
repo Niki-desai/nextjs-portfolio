@@ -62,6 +62,7 @@ const Home = () => {
                 onMouseLeave={() => handleHover("")}
               >
                 <img
+                  className="cursor-pointer"
                   width={20}
                   src={
                     hovered === "LinkedIn"
@@ -77,6 +78,7 @@ const Home = () => {
                 onMouseLeave={() => handleHover("")}
               >
                 <img
+                  className="cursor-pointer"
                   width={20}
                   src={
                     hovered === "GitHub"
@@ -92,6 +94,7 @@ const Home = () => {
                 onMouseLeave={() => handleHover("")}
               >
                 <img
+                  className="cursor-pointer"
                   width={20}
                   src={
                     hovered === "Instagram"
