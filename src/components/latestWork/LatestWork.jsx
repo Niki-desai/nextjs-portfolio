@@ -2,71 +2,129 @@ import React from "react";
 import "./../../custom-styles.css";
 import Astro from "./../../../public/images/Astro.svg";
 import Image from "next/image";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-const Home = () => {
+const LatestWork = () => {
   return (
     <>
       <div className="h-somescreen flex items-center justify-center bg-fuchsia-200 mt-12">
         <div class="grid grid-cols-6 gap-4 h-full w-full   rounded-lg shadow-md p-4">
-          <div class="col-span-3 bg-blue-200">
-            <div className="text-xs mb-3.5 sm:mb-4 lg:mb-7">WEB DEVELOPER</div>
-            <div className="">
-              <p className="text-base">Welcome, I'm</p>
-              <p className="text-5xl">Nikita Desai, </p>
-              <p className="text-base">
-                crafting resonant digital experiences.
-              </p>
-            </div>
-            <br />
-            <br />
-            <div className="text-sm">
-              Crafting my unique path of growth, I navigate professional
-              landscapes, leveraging skills in Web Development to drive
-              impactful innovation
-            </div>
-            <div className="flex flex-row justify-start my-5 mx-5">
-              <button className="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 focus:outline-none focus:ring focus:ring-orange-300 flex flex-row mx-5">
-                Contact me...
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 512 512"
-                  // className="text-white"
-                >
-                  <path d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376V479.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z" />
-                </svg>
-              </button>
-              <button className="px-4 py-2 bg-slate-950 text-white rounded-full hover:bg-slate-500 focus:outline-none focus:ring focus:bg-slate-400 flex flex-row mx-5">
-                Download CV......
-                <div className="bg-white mt-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 512 512"
-                  >
-                    <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
-                  </svg>
-                </div>
-              </button>
-            </div>
-            <div className="flex flex-row">
-              <icon>1</icon>
-              <icon>2</icon>
-              <icon>3</icon>
-              <icon>4</icon>
-            </div>
+          <div class="col-span-3  flex flex-col items-center my-5">
+            <h1>Latest Projects</h1>
+            <div>Go through my latest work ...</div>
+            <button className="px-4 py-2 bg-slate-950 text-white rounded-full hover:bg-slate-500 focus:outline-none focus:ring focus:bg-slate-400 flex flex-row mx-5 my-5">
+              All Projects
+            </button>
           </div>
-          <div class="bg-green-200 col-span-1">
+          {/* <div class="bg-green-200 col-span-1">
             2<div></div>
-          </div>
-          <div class="bg-yellow-200 col-span-2">
-            <Image
+          </div> */}
+          <div class=" col-span-3">
+            <Carousel
+              additionalTransfrom={0}
+              arrows
+              autoPlaySpeed={3000}
+              centerMode={false}
+              className=""
+              containerClass="container"
+              dotListClass=""
+              draggable
+              focusOnSelect={false}
+              infinite
+              itemClass=""
+              keyBoardControl
+              minimumTouchDrag={80}
+              pauseOnHover
+              renderArrowsWhenDisabled={false}
+              renderButtonGroupOutside={false}
+              renderDotsOutside
+              responsive={{
+                desktop: {
+                  breakpoint: {
+                    max: 3000,
+                    min: 1024,
+                  },
+                  items: 1,
+                },
+                mobile: {
+                  breakpoint: {
+                    max: 464,
+                    min: 0,
+                  },
+                  items: 1,
+                },
+                tablet: {
+                  breakpoint: {
+                    max: 1024,
+                    min: 464,
+                  },
+                  items: 1,
+                },
+              }}
+              rewind={false}
+              rewindWithAnimation={false}
+              rtl={false}
+              shouldResetAutoplay
+              // showDots
+              sliderClass=""
+              slidesToSlide={1}
+              swipeable
+            >
+              <img
+                src="https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                style={{
+                  display: "block",
+                  height: "100%",
+                  margin: "auto",
+                  width: "100%",
+                }}
+              />
+              <img
+                src="https://images.unsplash.com/photo-1549396535-c11d5c55b9df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                style={{
+                  display: "block",
+                  height: "100%",
+                  margin: "auto",
+                  width: "100%",
+                }}
+              />
+              <img
+                src="https://images.unsplash.com/photo-1550133730-695473e544be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                style={{
+                  display: "block",
+                  height: "100%",
+                  margin: "auto",
+                  width: "100%",
+                }}
+              />
+              <img
+                src="https://images.unsplash.com/photo-1550167164-1b67c2be3973?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                style={{
+                  display: "block",
+                  height: "100%",
+                  margin: "auto",
+                  width: "100%",
+                }}
+              />
+              <img
+                src="https://images.unsplash.com/photo-1550338861-b7cfeaf8ffd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                style={{
+                  display: "block",
+                  height: "100%",
+                  margin: "auto",
+                  width: "100%",
+                }}
+              />
+            </Carousel>
+
+            {/* <Image
               src={Astro}
               alt="Astro Image"
               width={500}
               height={500}
               className="pt-48"
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -74,4 +132,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default LatestWork;

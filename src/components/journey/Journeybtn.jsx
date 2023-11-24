@@ -4,24 +4,32 @@ import cloud from "./../../../public/images/cloud.png";
 const Journeybtn = () => {
   return (
     <>
-      <div>Journeybtn</div>
-
-      <svg
-        class="animate-bounce w-12 h-12"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <image
-          href={cloud}
-          //   width="24"
-          //   height="24"
-          className="w-3/5 h-2/5"
-        />
-        <text x="12" y="18" text-anchor="middle" font-size="6" fill="black">
-          {/* Join me On my Journey */}
-        </text>
-      </svg>
+      <div className="h-somescreen flex items-center justify-center bg-fuchsia-200 mt-12">
+        <div class="grid grid-cols-6 gap-4 h-full w-full   rounded-lg shadow-md p-4">
+          <div class="col-span-3 place-content-center ">
+            <h1> Embark on this journey with me...</h1>
+          </div>
+          {/* <div class=" col-span-1">
+            <div></div>
+          </div> */}
+          <div class=" col-span-3">
+            {/* <Image
+              src="/images/Coder.png"
+              alt="CoderImage"
+              width={500}
+              height={500}
+              className=""
+            /> */}
+            <div class="animate-bounce">
+              <img
+                src="/images/hero-image.png"
+                className="w-96 h-96"
+                alt="Example Image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

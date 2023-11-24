@@ -94,12 +94,12 @@ function Navbar() {
           </section>
           <section ref={myWorkRef} id="work">
             {/* About Me section content */}
-            <h1>Latest Projects</h1>
+            {/* <h1>Latest Projects</h1> */}
             <LatestWork></LatestWork>
           </section>
           <section ref={myServicesRef} id="services">
             {/* About Me section content */}
-            <h1>My Services</h1>
+            {/* <h1>My Services</h1> */}
             <MyServices />
           </section>
           <Journeybtn />
