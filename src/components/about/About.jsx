@@ -17,7 +17,8 @@ const About = () => {
 
   return (
     <>
-      <div className="h-somescreen flex items-center justify-center bg-fuchsia-200 mt-12">
+      {/* <div className="h-somescreen flex items-center justify-center bg-fuchsia-200 mt-12"> */}
+      <div>
         <div class="grid grid-cols-6 gap-4 h-full w-full   rounded-lg shadow-md p-4">
           <div class=" col-span-2">
             <Image

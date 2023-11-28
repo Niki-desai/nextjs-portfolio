@@ -10,7 +10,8 @@ import { CardActionArea } from "@mui/material";
 const MyServices = () => {
   return (
     <>
-      <div className="h-somescreen flex  justify-center items-center  bg-fuchsia-200 mt-12 ">
+      {/* <div className="h-somescreen flex  justify-center items-center  bg-fuchsia-200 mt-12 "> */}
+      <div>
         <div>
           <div className="flex flex-col items-center mb-20 text-4xl font-bold">
             {" "}

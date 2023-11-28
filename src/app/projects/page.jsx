@@ -20,7 +20,8 @@ const page = () => {
   //   console.log("ProjectData", JSON.stringify(ProjectData));
   return (
     <>
-      <div className="min-h-screen bg-fuchsia-200">
+      {/* <div className="min-h-screen bg-fuchsia-200"> */}
+      <div className="bg-gradient-to-br from-pink-500 to-purple-700">
         <div className="items-center justify-center  mt-9 overflow-hidden">
           <div class="grid grid-cols-3 gap-7 rounded-lg  p-4">
             {/* <div className="relative h-somescreen flex items-center justify-center bg-fuchsia-200 mt-12 "> */}
@@ -42,13 +43,14 @@ const page = () => {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Link href={project.link}>
+                    <Link href={project.link} className="z:-1">
                       <Button size="small">Go to Project</Button>
                     </Link>
                     {/* <Button size="small">Learn More</Button> */}
                   </CardActions>
                 </Card>
               ))}
+
             {/* </div> */}
             {/* </div>  */}
           </div>

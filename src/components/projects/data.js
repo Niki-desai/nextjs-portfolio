@@ -9,11 +9,11 @@ const projects = [
   },
   {
     imageSrc: "/images/project2.jpg",
-    projectName: "Project Two",
+    projectName: "Next js CSR",
     projectDescription:
       "Description for Project Two. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     shareOption: false,
-    link: "google.com",
+    link: "https://nextjs-portfolio-orpin-two.vercel.app/server/users",
   },
   {
     imageSrc: "/images/project3.jpg",

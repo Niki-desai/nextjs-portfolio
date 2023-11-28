@@ -38,7 +38,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="bg-fuchsia-100">
+      <div className="bg-gradient-to-br from-pink-500 to-purple-700">
         <header className="">
           <h3>LOGO</h3>
           <nav ref={navRef}>
@@ -92,26 +92,26 @@ function Navbar() {
         </header>
 
         <div className="">
-          <section ref={homeRef} id="home">
+          <section className="h-screen" ref={homeRef} id="home">
             {/* Home section content */}
             {/* <h1>Home</h1> */}
             <Home />
           </section>
-          <section ref={aboutMeRef} id="about">
+          <section className="h-screen" ref={aboutMeRef} id="about">
             {/* My Work section content */}
             <About />
           </section>
-          <section ref={myWorkRef} id="work">
+          <section className="h-screen" ref={myWorkRef} id="work">
             {/* About Me section content */}
             {/* <h1>Latest Projects</h1> */}
             <LatestWork></LatestWork>
           </section>
-          <section ref={myServicesRef} id="services">
+          <section className="h-screen" ref={myServicesRef} id="services">
             {/* About Me section content */}
             {/* <h1>My Services</h1> */}
             <MyServices />
           </section>
-          <section ref={journey} id="journey">
+          <section className="h-screen" ref={journey} id="journey">
             <Journeybtn />
           </section>
           {/* <Journeybtn /> */}
